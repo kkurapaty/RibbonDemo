@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Extensions\DependencyObjectExtensions.cs" />
+    <Compile Include="Extensions\PopupExtensions.cs" />
+    <Compile Include="RecordType.cs" />
+    <Compile Include="TimePeriod.cs" />
     <Page Include="Controls\RibbonControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,10 +71,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="ConfigItem.cs" />
+    <Compile Include="Controls\FilterButton.cs" />
     <Compile Include="Controls\FlatIconButton.cs" />
     <Compile Include="Controls\RibbonControl.xaml.cs">
       <DependentUpon>RibbonControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\VectorIcon.cs" />
+    <Compile Include="Controls\VectorIconDataFactory.cs" />
+    <Compile Include="Controls\VectorIconExtension.cs" />
+    <Compile Include="Controls\VectorIconKind.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="MainViewViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -84,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\Icons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\VectorIcon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
